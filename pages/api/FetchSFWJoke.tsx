@@ -1,6 +1,6 @@
+"use client";
 import RenderSFWJoke from "./RenderSFWJoke";
 import { useState, useEffect } from "react";
-
 export default function FetchSFWJoke() {
   const [getSFWJoke, setGetSFWJoke] = useState();
   useEffect(() => {
