@@ -1,6 +1,7 @@
 "use client";
 import RenderJoke from "./RenderJoke";
 import { useState, useEffect } from "react";
+
 export default function FetchAnyJoke() {
   const [getJoke, setGetJoke] = useState();
   useEffect(() => {
