@@ -13,7 +13,6 @@ export default function FetchSFWJoke() {
       `https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun,Spooky,Christmas?blacklistFlags=nsfw,political,racist,sexist,explicit`
     );
     const data = await response.json();
-
     setGetSFWJoke(data);
   }
 

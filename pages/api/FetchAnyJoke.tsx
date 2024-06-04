@@ -16,8 +16,9 @@ export default function FetchAnyJoke() {
   }
 
   return (
-    <>
+    <div aria-label="return-div">
+      Here's a joke
       <RenderJoke data={getJoke} />
-    </>
+    </div>
   );
 }

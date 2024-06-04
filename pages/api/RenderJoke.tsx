@@ -1,6 +1,6 @@
 export default function RenderJoke({ data }) {
   const NestedProp = data?.type;
-  if (NestedProp === "twopart") {
+  if (data === "twopart") {
     return (
       <div aria-label="twopart-label">
         Category:
