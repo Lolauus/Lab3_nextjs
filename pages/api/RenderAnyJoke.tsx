@@ -1,10 +1,9 @@
-export default function RenderJoke({ data }) {
+export default function RenderAnyJoke({ data }: { data: any }) {
   const NestedProp = data?.type;
-  if (data === "twopart") {
+  if (NestedProp === "twopart") {
     return (
       <div aria-label="twopart-label">
-        Category:
-        <div>{JSON.stringify(data.category)}</div>
+        <h2>Dont Watch These Jokes, please..</h2>
         Setup:
         <div>{JSON.stringify(data.setup)}</div>
         Punchline:
@@ -14,8 +13,7 @@ export default function RenderJoke({ data }) {
   } else if (NestedProp === "single")
     return (
       <div>
-        Category:
-        <div>{JSON.stringify(data.category)}</div>
+        <h2>Dont Watch These Jokes,please..</h2>
         One liner:
         <div aria-label="oneliner">{JSON.stringify(data.joke)}</div>
       </div>

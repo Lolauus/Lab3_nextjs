@@ -1,13 +1,9 @@
-import FetchAnyJoke from "@/pages/api/FetchAnyJoke";
-import FetchSFWJoke from "@/pages/api/FetchSFWJoke";
+import Main from "@/pages/api/Main";
 
 export default function Home() {
   return (
     <main>
-      <div>
-        <FetchSFWJoke />
-        <FetchAnyJoke />
-      </div>
+      <Main />
     </main>
   );
 }

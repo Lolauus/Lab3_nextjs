@@ -1,5 +1,5 @@
 "use client";
-import RenderAnyJoke from "./RenderAnyJoke";
+import RenderProgrammingJoke from "./RenderProgrammingJoke";
 import { useState, useEffect } from "react";
 
 export default function FetchAnyJoke() {
@@ -9,15 +9,15 @@ export default function FetchAnyJoke() {
   }, []);
 
   async function fetchData() {
-    const response = await fetch(`https://v2.jokeapi.dev/joke/Any`);
+    const response = await fetch(`https://v2.jokeapi.dev/joke/Programming`);
     const data = await response.json();
 
     setGetJoke(data);
   }
 
   return (
-    <div aria-label="return-div">
-      <RenderAnyJoke data={getJoke} />
+    <div>
+      <RenderProgrammingJoke data={getJoke} />
     </div>
   );
 }

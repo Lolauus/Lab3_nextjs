@@ -3,7 +3,7 @@ export default function RenderSFWJoke({ data }: { data: any }) {
   if (NestedProp === "twopart") {
     return (
       <div>
-        <h2>"Safe" For Work Jokes!</h2>
+        <h2>Programming Jokes!</h2>
         Setup:
         <div>{JSON.stringify(data.setup)}</div>
         Punchline:
@@ -13,7 +13,7 @@ export default function RenderSFWJoke({ data }: { data: any }) {
   } else if (NestedProp === "single")
     return (
       <div>
-        <h2>"Safe" for work Jokes!</h2>
+        <h2>Programming Jokes!</h2>
         One liner:
         <div>{JSON.stringify(data.joke)}</div>
       </div>
