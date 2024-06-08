@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Main from "../../pages/api/Main";
+import Main from "../../pages/Main";
 
 describe("testing if Main is rendering", () => {
   it("Should find the div in main-component", () => {

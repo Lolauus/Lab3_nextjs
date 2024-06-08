@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import RenderAnyJoke from "../../pages/api/RenderAnyJoke";
+import RenderAnyJoke from "../../pages/RenderAnyJoke";
 
 describe("testing if we find a certain div", () => {
   it("Should find the div named header", async () => {
