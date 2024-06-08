@@ -1,21 +1,17 @@
 export default function RenderAnyJoke({ data }: { data: any }) {
   const NestedProp = data?.type;
-  if (NestedProp === "twopart") {
+  
+  if (NestedProp) {
     return (
-      <div aria-label="twopart-label">
-        <h2>Dont Watch These Jokes, please..</h2>
-        Setup:
-        <div>{JSON.stringify(data.setup)}</div>
-        Punchline:
-        <div>{JSON.stringify(data.delivery)}</div>
+      <div aria-label="header">
+        <h1>Could be any kind of Joke..</h1>
+        <h2>{data.category}</h2>
+        <div>{data.setup}</div>
+        <div>{data.delivery}</div>
+        <div>{data.joke}</div>
       </div>
     );
-  } else if (NestedProp === "single")
-    return (
-      <div>
-        <h2>Dont Watch These Jokes,please..</h2>
-        One liner:
-        <div aria-label="oneliner">{JSON.stringify(data.joke)}</div>
-      </div>
-    );
+  } else {
+    <h2>No Jokes today, sorry!</h2>;
+  }
 }

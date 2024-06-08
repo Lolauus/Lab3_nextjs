@@ -11,7 +11,6 @@ export default function FetchAnyJoke() {
   async function fetchData() {
     const response = await fetch(`https://v2.jokeapi.dev/joke/Programming`);
     const data = await response.json();
-
     setGetJoke(data);
   }
 
