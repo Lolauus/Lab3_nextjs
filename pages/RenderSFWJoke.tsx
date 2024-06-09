@@ -6,9 +6,9 @@ export default function RenderSFWJoke({ data }: { data: any }) {
         <h1>"Safe" For Work Jokes!</h1>
         <hr />
         <h3> Category: {data.category}</h3>
-        <div>{data.setup}</div>
-        <div>{data.delivery}</div>
-        <div>{data.joke}</div>
+        <p>{data.setup}</p>
+        <p>{data.delivery}</p>
+        <p>{data.joke}</p>
       </div>
     );
   } else {
