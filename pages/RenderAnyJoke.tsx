@@ -1,11 +1,12 @@
 export default function RenderAnyJoke({ data }: { data: any }) {
   const NestedProp = data?.type;
-  
+
   if (NestedProp) {
     return (
-      <div aria-label="header">
+      <div>
         <h1>Could be any kind of Joke..</h1>
-        <h2>{data.category}</h2>
+        <hr />
+        <h3> Category: {data.category}</h3>
         <div>{data.setup}</div>
         <div>{data.delivery}</div>
         <div>{data.joke}</div>

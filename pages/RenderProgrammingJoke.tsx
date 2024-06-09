@@ -4,10 +4,12 @@ export default function RenderSFWJoke({ data }: { data: any }) {
     return (
       <div>
         <h1>Nerd Jokes!</h1>
-        <h2>{data.category}</h2>
+        <hr />
+        <h3> Category: {data.category}</h3>
         <div>{data.setup}</div>
         <div>{data.delivery}</div>
         <div>{data.joke}</div>
+        <hr />
       </div>
     );
   } else {

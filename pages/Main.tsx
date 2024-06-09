@@ -1,20 +1,17 @@
+import "@/styles/main.css";
 import FetchAnyJoke from "./FetchAnyJoke";
 import FetchProgrammingJoke from "./FetchProgrammingJoke";
 import FetchSFWJoke from "./FetchSFWJoke";
 import Footer from "./Footer";
-import RenderNewJokes from "./RenderNewJokesButton";
+import ButtonRenderNewJokes from "./ButtonRenderNewJokes";
 
 export default function Main() {
   return (
-    <div aria-label="component-render">
-      <RenderNewJokes />
-      <br />
+    <div className="wrapper" aria-label="component-render">
       <FetchSFWJoke />
-      <br />
       <FetchAnyJoke />
-      <br />
       <FetchProgrammingJoke />
-      <br />
+      <ButtonRenderNewJokes />
       <Footer />
     </div>
   );

@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  text-wrap: balance;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+hr {
+  border-top: 1px dashed black;
+  width: 50%;
+}
+h3 {
+  color: chocolate;
+}
